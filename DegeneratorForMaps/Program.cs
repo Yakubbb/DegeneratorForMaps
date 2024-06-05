@@ -42,18 +42,37 @@ namespace DegeneratorForMaps
 
 
 
-            for (int i = 0; i < 5; i++)
-            {
-                AbstractStructure testMountains = new Mountains(100, 100, 0, 0, 1000);
-                Map.DebugDrawMap(testMountains.StructureChars);
-                Console.WriteLine();
-                Console.WriteLine();
-            }
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Structure testMountains = new River(100, 100, 0, 0, 10);
+            //    Map.DebugDrawMap(testMountains.StructureField);
+            //    Console.WriteLine();
+            //    Console.WriteLine();
+            //}
 
-            // Map aboba = Map.CreateMapWithRandomChunks(100, 100);
-            //Map aboba = new Map(100, 100);
-            //aboba.DebugShowChunks();
-            //Map.DebugDrawMap(aboba);
+            //// Map aboba = Map.CreateMapWithRandomChunks(100, 100);
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Map aboba = new Map();
+            //    aboba.DebugShowChunks();
+            //    Map.DebugDrawMap(aboba);
+
+            //    Console.WriteLine();
+            //    Console.WriteLine();
+            //}
+
+
+            //Map Aboba = new(300,300,40,40,20,20,20);
+            //Map.DebugDrawMap(Aboba);
+            //Aboba.PlaceStructure(0,0,textMap);
+            //Console.WriteLine("\n\n\n\n\n");
+            //Map.DebugDrawMap(Aboba);
+
+
+            Map aboba = new(300,300);
+            aboba.PlaceStructure(100, 100, textMap);
+            Map.DebugDrawMap(aboba);
         }
+
     }
 }
